@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P in real time</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <H1>P2P Transfer in real time</H1>
+
+    <div id="beforeStart"> 
+        <div class="container">
+            <button type="button" class="btn" id="btn_start" >Start</button>
+        </div>
+    </div>
+
+    <div id="startedNotConnected" style="display: none;">
+        <div class="container">
+            <h2>ID: ofasoeijd poeipod poakdpospjo</h2>
+            <span>Name: </span>
+            <input type="text" id="input" placeholder="Your name goes here" class="box">
+            <div id="qr">
+
+            </div>
+            Connect with other person:
+            enter id
+            <button type="button" class="btn" id="btn_connect">Connect</button>
+
+        </div>
+    </div>
+
+    <div id="connected" style="display: none;">
+        <h2>3</h2>
+    </div>
+
+    <button onclick="uno()">1</button>
+    <button onclick="dos()">2</button>
+    <button onclick="tres()">3</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
